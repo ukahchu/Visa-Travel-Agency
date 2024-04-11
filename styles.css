@@ -26,6 +26,7 @@ buttons, headings, or other elements consistently throughout the website.*/
   padding: 0;
   box-sizing: border-box;
 }
+/*Start of styles for Header section*/
 
 .section__container {
   max-width: var(--max-width);
@@ -152,3 +153,137 @@ nav {
 .nav__links a:hover {
   color: var(--primary-color-dark);
 }
+
+.header__container {
+  max-width: 900px;
+}
+
+.header__container h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+}
+.header__container p {
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 4rem;
+  color: var(--white);
+  text-align: center;
+}
+
+/*Booking section styling start*/
+
+.booking {
+  max-width: 400px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  gap: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
+.booking__type {
+  width: fit-content;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.booking__type > div {
+  padding: 10px;
+  color: var(--white);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking__type > :is(div:hover, div.active) {
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+
+.booking__form {
+  padding: 1.5rem 1rem;
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.booking__input {
+  display: grid;
+  gap: 5px;
+}
+
+.booking__input > label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.booking__input > input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+  border: 1px solid var(--extra-light);
+  border-radius: 2px;
+}
+
+.booking__btn {
+  text-align: right;
+}
+
+/*Booking section styling End*/
+
+/*End of styles for Header section*/
+
+/*Start of Media Queries*/
+@media (width > 768px) {
+  nav {
+    padding: 2rem 1rem;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav__bar {
+    padding: 0;
+    background-color: transparent;
+  }
+  .nav__menu__btn {
+    display: none;
+  }
+  .nav__links {
+    padding: 0;
+    width: unset;
+    position: static;
+    transform: none;
+    flex-direction: row;
+    background-color: transparent;
+  }
+  .header {
+    padding: 0;
+  }
+}
+/*End of Media Queries*/
+
+/*Start of styling for trip routes*/
+
+.booking {
+  max-width: 100%;
+  padding: 1.5rem;
+}
+
+.booking__form {
+  padding: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/*End of styling for trip routes*/

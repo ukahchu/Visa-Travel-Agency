@@ -1,3 +1,4 @@
+//Start of function for menu btn
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
@@ -7,4 +8,20 @@ menuBtn.addEventListener("click", (e) => {
 
   const isOpen = navLinks.classList.contains("open");
   menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+});
+
+navLinks.addEventListener("click", (e) => {
+  navLinks.classList.remove("open");
+  menuBtnIcon.setAttribute("class", "ri-menu-line");
+});
+
+//End of function for menu btn
+
+const bookingType = document.getElementById("booking-type");
+
+bookingType.addEventListener("click", (e) => {
+    Array.from(bookingType.getElementsByTagName("div")).forEach((item) => {
+        item.classList.remove("active")
+    });
+    e.target.classList.add("active");
 });
