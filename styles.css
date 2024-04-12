@@ -244,7 +244,71 @@ nav {
 
 /*End of styles for Header section*/
 
-/*Start of Media Queries*/
+/*Start of Flights section styles*/
+
+.flights__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.flights__card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.flights__card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.flights__card img {
+  max-width: 300px;
+  margin: auto;
+  border-radius: 2px;
+}
+
+.flights__card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flights__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.flights__card p {
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+}
+
+.flight__btn {
+  text-align: center;
+}
+
+/*End of Flights section styles*/
+
+/*Start of Media Queries for screens above 576px*/
+
+@media (width > 576px) {
+  .flights__card {
+    flex-direction: row;
+  }
+  .flights__card img {
+    max-width: 200px;
+  }
+}
+/*End of Media Queries for screens above 576px*/
+
+/*Start of Media Queries for screens above 767*/
+
 @media (width > 768px) {
   nav {
     padding: 2rem 1rem;
@@ -272,7 +336,7 @@ nav {
     padding: 0;
   }
 }
-/*End of Media Queries*/
+/*End of Media Queries for screens above 767*/
 
 /*Start of styling for trip routes*/
 
@@ -287,3 +351,7 @@ nav {
 }
 
 /*End of styling for trip routes*/
+
+.flights__grid {
+  grid-template-columns: repeat(4, 1fr);
+}
