@@ -13,8 +13,63 @@
     />
     <link rel="icon" href="/assets/favicon.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict";
+
+      !(function () {
+        var t = (window.driftt = window.drift = window.driftt || []);
+        if (!t.init) {
+          if (t.invoked)
+            return void (
+              window.console &&
+              console.error &&
+              console.error("Drift snippet included twice.")
+            );
+          (t.invoked = !0),
+            (t.methods = [
+              "identify",
+              "config",
+              "track",
+              "reset",
+              "debug",
+              "show",
+              "ping",
+              "page",
+              "hide",
+              "off",
+              "on",
+            ]),
+            (t.factory = function (e) {
+              return function () {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }),
+            t.methods.forEach(function (e) {
+              t[e] = t.factory(e);
+            }),
+            (t.load = function (t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement("script");
+              (o.type = "text/javascript"),
+                (o.async = !0),
+                (o.crossorigin = "anonymous"),
+                (o.src =
+                  "https://js.driftt.com/include/" + n + "/" + t + ".js");
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            });
+        }
+      })();
+      drift.SNIPPET_VERSION = "0.3.1";
+      drift.load("ppriffgccssg");
+    </script>
+    <!-- End of Async Drift Code -->
     <title>Visa Travel Agency-Flights | Hotels | Visa | Tours</title>
   </head>
+
   <body>
     <!--Start of header-->
     <header class="header">
@@ -118,7 +173,7 @@
       </p>
       <div class="flights__grid">
         <div class="flights__card">
-          <img src="/assets/hotel-1.jpg" alt="flights" />
+          <img src="/assets/flight-service.jpg" alt="flights" />
           <div>
             <div>
               <h4>Flight Deals</h4>
@@ -133,7 +188,7 @@
           </div>
         </div>
         <div class="flights__card">
-          <img src="/assets/hotel-1.jpg" alt="flights" />
+          <img src="/assets/hotel-service.jpg" alt="hotel" />
           <div>
             <div>
               <h4>Hotel Deals</h4>
@@ -148,7 +203,7 @@
           </div>
         </div>
         <div class="flights__card">
-          <img src="/assets/hotel-1.jpg" alt="flights" />
+          <img src="/assets/visa-service.jpg" alt="visa" />
           <div>
             <div>
               <h4>Visa Services</h4>
@@ -164,7 +219,7 @@
           </div>
         </div>
         <div class="flights__card">
-          <img src="/assets/hotel-1.jpg" alt="flights" />
+          <img src="/assets/tour-package.png" alt="tours" />
           <div>
             <div>
               <h4>Tour Packages</h4>
@@ -179,7 +234,7 @@
           </div>
         </div>
         <div class="flights__card">
-          <img src="/assets/hotel-1.jpg" alt="flights" />
+          <img src="/assets/car rental.png" alt="car rentals" />
           <div>
             <div>
               <h4>Car Rentals</h4>
@@ -194,7 +249,7 @@
           </div>
         </div>
         <div class="flights__card">
-          <img src="/assets/hotel-1.jpg" alt="flights" />
+          <img src="/assets/dubai-visa-service.png" alt="dubai-visa service" />
           <div>
             <div>
               <h4>Dubai Visa Services</h4>
@@ -222,7 +277,7 @@
       </div>
       <div class="offer__grid">
         <div class="offer__card">
-          <img src="/assets/flight-3.jpg" alt="flight deals" />
+          <img src="/assets//dubai.png" alt="flight deals" />
           <h4>Douala to Dubai</h4>
           <p>15.Sep.2024</p>
           <div>
@@ -231,7 +286,7 @@
           </div>
         </div>
         <div class="offer__card">
-          <img src="/assets/flight-4.jpg" alt="flight deals" />
+          <img src="/assets/mexico.png" alt="flight deals" />
           <h4>Douala to Mexico</h4>
           <p>15.Sep.2024</p>
           <div>
@@ -240,7 +295,7 @@
           </div>
         </div>
         <div class="offer__card">
-          <img src="/assets/flight-1.jpg" alt="flight deals" />
+          <img src="/assets/washington.png" alt="flight deals" />
           <h4>Douala to Washington</h4>
           <p>15.Sep.2024</p>
           <div>
