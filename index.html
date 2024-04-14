@@ -7,6 +7,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="icon" href="/assets/favicon.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" />
     <title>Visa Travel Agency-Flights | Hotels | Visa | Tours</title>
@@ -27,11 +31,11 @@
         </div>
         <ul class="nav__links" id="nav-links">
           <li><a href="#flights">Flights</a></li>
-          <li><a href="#hotels">Hotels</a></li>
-          <li><a href="#visas">Visas</a></li>
-          <li><a href="#tours">Tours</a></li>
-          <li><a href="#Cars">Cars</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#services">Hotels</a></li>
+          <li><a href="#services">Visas</a></li>
+          <li><a href="#services">Tours</a></li>
+          <li><a href="#services">Cars</a></li>
+          <li><a href="#clients">Testimonials</a></li>
           <li><button class="btn">Sign Up</button></li>
         </ul>
       </nav>
@@ -53,27 +57,48 @@
           <form action="/" class="booking__form">
             <div class="booking__input">
               <label for="departure">From</label>
-              <input type="text" placeholder="Departure City" />
+              <!--Flight icon departure start-->
+              <div class="input-icon">
+                <i class="ri-flight-takeoff-fill"></i>
+                <input type="text" placeholder="Departure City" />
+              </div>
+              <!--flight icon departure end-->
             </div>
+            <!--Flight icon arrival start-->
             <div class="booking__input">
               <label for="arrival">To</label>
-              <input type="text" placeholder="Arrival City" />
+              <div class="input-icon">
+                <i class="ri-flight-land-line"></i>
+                <input type="text" placeholder="Arrival City" />
+              </div>
             </div>
+            <!--Flight icon arrival end-->
+
             <div class="booking__input">
               <label for="date">Date</label>
-              <input type="text" placeholder="Departure Date" />
+              <input type="date" placeholder="Departure Date" />
             </div>
             <div class="booking__input">
               <label for="departure">Return</label>
-              <input type="text" placeholder="Departure City" />
+              <!--start of flight icon for return city-->
+              <div class="input-icon">
+                <i class="ri-flight-takeoff-fill"></i>
+                <input type="text" placeholder="Departure City" />
+              </div>
+              <!--End of flight icon for return city-->
             </div>
             <div class="booking__input">
               <label for="arrival">To</label>
-              <input type="text" placeholder="Arrival City" />
+              <!--start of flight icon for arrival city-->
+              <div class="input-icon">
+                <i class="ri-flight-land-line"></i>
+                <input type="text" placeholder="Arrival City" />
+              </div>
+              <!--end of flight icon for arrival city-->
             </div>
             <div class="booking__input">
               <label for="date">Date</label>
-              <input type="text" placeholder="Return Date" />
+              <input type="date" placeholder="Return Date" />
             </div>
           </form>
           <div class="booking__btn">
@@ -86,7 +111,7 @@
 
     <!--Start of flights section-->
 
-    <section class="section__container flights__container" id="flights">
+    <section class="section__container flights__container" id="services">
       <h2 class="section__header">Our Curated Travel Services.</h2>
       <p class="section__description">
         Jet-set with ease. Find your wings. Book your next adventure now!
@@ -188,7 +213,7 @@
     </section>
     <!--End of flights section-->
 
-    <!--Start of Hotels section-->
+    <!--Start of Popular Flight Destinations section-->
 
     <section class="section__container offer__container" id="offer">
       <div class="offer__header">
@@ -225,8 +250,246 @@
         </div>
       </div>
     </section>
+    <!--End of Popular Flight Destinations section-->
 
-    <!--End of Hotels section-->
+    <!--start of app section-->
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="/assets/visa travel app.png" alt="Visa Travel Agency App" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">
+          Enhanced booking platform for your next voyage
+        </h2>
+        <p class="section__description">
+          Navigate the world effortlessly with our user-friendly platform,
+          connecting you to the finest destinations and accommodations.
+        </p>
+        <ul>
+          <li>
+            <span><i class="ri-checkbox-circle-line"></i></span>
+            Easily find and compare transportation options, ensuring a
+            hassle-free journey to your next destination.
+          </li>
+          <li>
+            <span><i class="ri-checkbox-circle-line"></i></span>
+            Enjoy a straightforward and quick booking experience for flights,
+            cars, trains and other transportation modes, all in one place.
+          </li>
+        </ul>
+
+        <div class="about__links">
+          <a href="#">
+            <img src="/assets/google-play.png" alt="google-play" />
+          </a>
+          <a href="#">
+            <img src="/assets/app-store.png" alt="app-store" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--End of app section-->
+
+    <!--Start of Testimonials section-->
+    <section class="client" id="clients">
+      <div class="section__container client__container">
+        <h2 class="section__header">What our clients say.</h2>
+        <p class="section__description">
+          Discover the stories of wanderlust and cherished memories through the
+          eyes of our valued clients.
+        </p>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="/assets/client-1.jpg" alt="client" />
+                <h4>Steven Chu</h4>
+                <p>Software Developer</p>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-line"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                  Visa Travel Agency made my trip stress-free. Their expertise
+                  ensured smooth processing. Highly recommend their services!.
+                  Online 24/7.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="/assets/client-2.jpg" alt="client" />
+                <h4>Chona Victorine</h4>
+                <p>Markting Specialist</p>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-line"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                  Visa Travel Agency exceeded expectations. Their
+                  professionalism and efficiency made my travel plans
+                  effortless. Highly recommended service!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="/assets/client-3.jpg" alt="client" />
+                <h4>Jerry Parh</h4>
+                <p>Senior Travel Consultant</p>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-line"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                  Visa Travel Agency took care of every detail, making my
+                  journey hassle-free. I'll definitely choose them again for my
+                  future travels.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="/assets/client-4.jpg" alt="client" />
+                <h4>Wankwi Frankline</h4>
+                <p>Senior Sales Expert</p>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-line"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                  Visa Travel Agency took care of every detail, making my
+                  journey hassle-free. I'll definitely choose them again for my
+                  future travels.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="/assets/client-5.jpg" alt="client" />
+                <h4>Martin Elissa</h4>
+                <p>Adventure Enthusiast</p>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-line"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                  Visa Travel Agency took care of every detail, making my
+                  journey hassle-free. I'll definitely choose them again for my
+                  future travels.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of Testimonials section-->
+
+    <!--Start of footer section-->
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <a href="#"><img src="/assets/logo.png" alt="logo" /></a>
+          </div>
+          <p>
+            Explore the world with ease and excitement through our comprehensive
+            travel platform. Your journey begins here, where seamless planning
+            meets unforgettable experiences.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Sitemap</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#flights">Flights</a>
+            </li>
+            <li>
+              <a href="#services">Hotels</a>
+            </li>
+            <li>
+              <a href="#services">Visas</a>
+            </li>
+            <li>
+              <a href="#services">Tours</a>
+            </li>
+            <li>
+              <a href="#services">Cars</a>
+            </li>
+            <li>
+              <a href="#clients">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +971 55 15 75 146
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-mail-line"></i></span>
+                visa.travel.tours.agency@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-line"></i></span> Dubai-United Arab
+                Emirates
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="/">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar" id="footer-year">
+        <!--Footer text is generated from the linked js file-->
+      </div>
+    </footer>
+    <!--End of footer section-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
