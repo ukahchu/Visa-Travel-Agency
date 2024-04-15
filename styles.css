@@ -64,7 +64,7 @@ buttons, headings, or other elements consistently throughout the website.*/
 }
 
 img {
-  width: 300px;
+  width: 100%;
   display: flex;
 }
 
@@ -136,7 +136,7 @@ nav {
   align-items: center;
   gap: 2rem;
   background-color: var(--primary-color);
-  transform: translateY(-1000%);
+  transform: translateY(-100%);
   transition: 0.5s;
   z-index: -1;
 }
@@ -160,7 +160,7 @@ nav {
 
 .header__container h1 {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--white);
   text-align: center;
@@ -226,42 +226,31 @@ nav {
   display: inline-block;
 }
 
-.input-icon .ri-flight-takeoff-fill {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
-.input-icon .ri-flight-land-line {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
+.input-icon .ri-flight-takeoff-fill,
+.input-icon .ri-flight-land-line,
 .input-icon .ri-calendar-2-line {
   position: absolute;
   left: 10px;
   top: 50%;
+  padding-right: 5px;
   transform: translateY(-50%);
   pointer-events: none;
 }
+
 .input-icon input {
-  padding-left: 30px; /* Adjust padding to ensure text does not overlap the icon */
+  padding-left: 35px; /* Adjust padding to ensure text does not overlap the icon */
   width: 250px; /* Adjust width as needed */
   height: 37px;
 }
 /*end of styling for input field for booking form*/
 
-.booking__input > label {
+.booking__input label {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--white);
 }
 
-.booking__input > input {
+.booking__input input {
   width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
@@ -269,7 +258,9 @@ nav {
   border: 1px solid var(--extra-light);
   border-radius: 2px;
 }
-
+.booking__input input {
+  padding-left: 35px;
+}
 .booking__btn {
   text-align: right;
 }
@@ -358,7 +349,7 @@ nav {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 .offer__card img {
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 2px;
 }
 .offer__card h4 {
@@ -542,6 +533,8 @@ nav {
 */
 /*End of footer styles*/
 
+
+
 /*Start of Media Queries for screens above 576px*/
 @media (width > 576px) {
   .flights__card {
@@ -594,7 +587,7 @@ nav {
     background-color: transparent;
   }
   .header {
-    padding: 0;
+    padding-top: 0;
   }
 }
 /*End of Media Queries for screens above 767*/
