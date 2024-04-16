@@ -295,8 +295,11 @@ nav {
   max-width: 300px;
   margin: auto;
   border-radius: 2px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
 }
-
+.service__card img:hover {
+  transform: scale(1.1); /* Increase the scale to 1.1 times the original size */
+}
 .service__card > div {
   display: flex;
   flex-direction: column;
@@ -351,6 +354,10 @@ nav {
 .offer__card img {
   margin-bottom: 1rem;
   border-radius: 2px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+}
+.offer__card img:hover {
+  transform: scale(1.1); /* Increase the scale to 1.1 times the original size */
 }
 .offer__card h4 {
   margin-bottom: 0.5rem;
@@ -383,6 +390,10 @@ nav {
 .about__image img {
   max-width: 300px;
   margin: auto;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+}
+.about__image img:hover {
+  transform: scale(1.1); /* Increase the scale to 1.1 times the original size */
 }
 .about__content ul {
   margin-block: 2rem;
@@ -407,6 +418,10 @@ nav {
 .about__links img {
   max-width: 150px;
   height: 100%;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+}
+.about__links img:hover {
+  transform: scale(1.1); /* Increase the scale to 1.1 times the original size */
 }
 /*End of styles for about section*/
 
