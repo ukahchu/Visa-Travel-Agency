@@ -36,7 +36,7 @@ const swiper = new Swiper(".swiper", {
 });
 //End functionality for testimonial slider
 
-//Start of footer-year
+//Start of footer-year-automatically update the year evry year.
 
 document.addEventListener("DOMContentLoaded", function () {
   var currentYear = new Date().getFullYear(); // Get the current year
@@ -76,7 +76,7 @@ ScrollReveal().reveal(".header__container .booking", {
 });
 
 //service container
-ScrollReveal().reveal(".flights__card", {
+ScrollReveal().reveal(".service__card", {
   duration: 1000,
   interval: 500,
 });

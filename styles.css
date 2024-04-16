@@ -271,13 +271,13 @@ nav {
 
 /*Start of Flights section styles*/
 
-.flights__grid {
+.service__grid {
   margin-top: 4rem;
   display: grid;
   gap: 1rem;
 }
 
-.flights__card {
+.service__card {
   padding: 1rem;
   display: flex;
   gap: 1rem;
@@ -287,35 +287,35 @@ nav {
   transition: 0.3s;
 }
 
-.flights__card:hover {
+.service__card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.flights__card img {
+.service__card img {
   max-width: 300px;
   margin: auto;
   border-radius: 2px;
 }
 
-.flights__card > div {
+.service__card > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.flights__card h4 {
+.service__card h4 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   font-weight: 800;
   color: var(--text-dark);
 }
 
-.flights__card p {
+.service__card p {
   margin-bottom: 0.5rem;
   color: var(--text-light);
 }
 
-.flight__btn {
+.service__btn {
   text-align: right;
 }
 
@@ -533,14 +533,12 @@ nav {
 */
 /*End of footer styles*/
 
-
-
 /*Start of Media Queries for screens above 576px*/
 @media (width > 576px) {
-  .flights__card {
+  .service__card {
     flex-direction: row;
   }
-  .flights__card img {
+  .service__card img {
     max-width: 200px;
   }
   .offer__grid {
@@ -606,7 +604,7 @@ nav {
 
 /*End of styling for trip routes*/
 
-.flights__grid {
+.service__grid {
   grid-template-columns: repeat(2, 1fr);
 }
 .offer__grid {
