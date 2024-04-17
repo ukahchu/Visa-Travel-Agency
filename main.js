@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     footerYearDiv.style.textAlign = "center";
   }
 });
+
 //End of footer-year
 
 //start ofscroll reveal functionality

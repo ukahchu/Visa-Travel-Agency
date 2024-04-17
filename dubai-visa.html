@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="/assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict";
+
+      !(function () {
+        var t = (window.driftt = window.drift = window.driftt || []);
+        if (!t.init) {
+          if (t.invoked)
+            return void (
+              window.console &&
+              console.error &&
+              console.error("Drift snippet included twice.")
+            );
+          (t.invoked = !0),
+            (t.methods = [
+              "identify",
+              "config",
+              "track",
+              "reset",
+              "debug",
+              "show",
+              "ping",
+              "page",
+              "hide",
+              "off",
+              "on",
+            ]),
+            (t.factory = function (e) {
+              return function () {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }),
+            t.methods.forEach(function (e) {
+              t[e] = t.factory(e);
+            }),
+            (t.load = function (t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement("script");
+              (o.type = "text/javascript"),
+                (o.async = !0),
+                (o.crossorigin = "anonymous"),
+                (o.src =
+                  "https://js.driftt.com/include/" + n + "/" + t + ".js");
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            });
+        }
+      })();
+      drift.SNIPPET_VERSION = "0.3.1";
+      drift.load("ppriffgccssg");
+    </script>
+    <!-- End of Async Drift Code -->
+    <title>Dubai Services</title>
+  </head>
+
+  <body>
+    <!--Start of header-->
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="/index.html"
+              ><img src="/assets/logo.png" alt="Visa Travel Agency logo"
+            /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="/index.html#flights">Flights</a></li>
+          <li><a href="/index.html#services">Hotels</a></li>
+          <li><a href="/index.html#services">Visas</a></li>
+          <li><a href="/index.html">Tours</a></li>
+          <li><a href="/index.html#services">Cars</a></li>
+          <li><a href="/index.html#clients">Testimonials</a></li>
+          <li><button class="btn">Sign Up</button></li>
+        </ul>
+      </nav>
+
+      <!--Start of landing page with flight booking form-->
+
+      <div class="section__container header__container" id="flights">
+        <h1>UAE-DUBAI VISA SERVICES</h1>
+
+        <div class="booking">
+          <div class="booking__type" id="booking-type">
+            <div class="active">Visit visa</div>
+            <div>Visa change</div>
+            <div>Visa extension</div>
+            <div>Resident visa</div>
+          </div>
+          <form action="/" class="booking__form">
+            <div class="booking__input">
+              <label for="departure">From</label>
+              <!--Flight icon departure start-->
+              <div class="input-icon">
+                <i class="ri-flight-takeoff-fill"></i>
+                <input type="text" placeholder="Departure City" />
+              </div>
+              <!--flight icon departure end-->
+            </div>
+            <!--Flight icon arrival start-->
+            <div class="booking__input">
+              <label for="arrival">To</label>
+              <div class="input-icon">
+                <i class="ri-flight-land-line"></i>
+                <input type="text" placeholder="Arrival City" />
+              </div>
+            </div>
+            <!--Flight icon arrival end-->
+
+            <div class="booking__input">
+              <label for="date">Date</label>
+              <input type="date" placeholder="Departure Date" />
+            </div>
+            <div class="booking__input">
+              <label for="departure">Return</label>
+              <!--start of flight icon for return city-->
+              <div class="input-icon">
+                <i class="ri-flight-takeoff-fill"></i>
+                <input type="text" placeholder="Departure City" />
+              </div>
+              <!--End of flight icon for return city-->
+            </div>
+            <div class="booking__input">
+              <label for="arrival">To</label>
+              <!--start of flight icon for arrival city-->
+              <div class="input-icon">
+                <i class="ri-flight-land-line"></i>
+                <input type="text" placeholder="Arrival City" />
+              </div>
+              <!--end of flight icon for arrival city-->
+            </div>
+            <div class="booking__input">
+              <label for="date">Date</label>
+              <input type="date" placeholder="Return Date" />
+            </div>
+          </form>
+          <div class="booking__btn">
+            <button class="btn">Next</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--End of header with flight booking form-->
+
+    <!--Start of Popular Flight Destinations section-->
+
+    <section class="section__container offer__container" id="offer">
+      <div class="offer__header">
+        <h2 class="section__header">Our Popular Flight Destinations.</h2>
+        <a href="/flight-deals.html">View All</a>
+      </div>
+      <div class="offer__grid">
+        <div class="offer__card">
+          <img src="/assets//dubai.png" alt="flight deals" />
+          <h4>Douala to Dubai</h4>
+          <p>15.Sep.2024</p>
+          <div>
+            <span>450,000FCFA</span>
+            <button class="btn">Book Now</button>
+          </div>
+        </div>
+        <div class="offer__card">
+          <img src="/assets/mexico.png" alt="flight deals" />
+          <h4>Douala to Mexico</h4>
+          <p>15.Sep.2024</p>
+          <div>
+            <span>1,550,000FCFA</span>
+            <button class="btn">Book Now</button>
+          </div>
+        </div>
+        <div class="offer__card">
+          <img src="/assets/washington.png" alt="flight deals" />
+          <h4>Douala to Washington</h4>
+          <p>15.Sep.2024</p>
+          <div>
+            <span>1,350,000FCFA</span>
+            <button class="btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of Popular Flight Destinations section-->
+
+    <!--Start of footer section-->
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <a href="#"><img src="/assets/logo.png" alt="logo" /></a>
+          </div>
+          <p>
+            Explore the world with ease and excitement through our comprehensive
+            travel platform. Your journey begins here, where seamless planning
+            meets unforgettable experiences.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Sitemap</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="/index.html#flights">Flights</a>
+            </li>
+            <li>
+              <a href="/index.html#services">Hotels</a>
+            </li>
+            <li>
+              <a href="/index.html#services">Visas</a>
+            </li>
+            <li>
+              <a href="/index.html#services">Tours</a>
+            </li>
+            <li>
+              <a href="/index.html#services">Cars</a>
+            </li>
+            <li>
+              <a href="/index.html#clients">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +971 55 15 75 146
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-mail-line"></i></span>
+                visa.travel.tours.agency@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-line"></i></span> Dubai-United Arab
+                Emirates
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="/">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar" id="footer-year">
+        <!--Footer text is generated from the linked js file-->
+      </div>
+    </footer>
+    <!--End of footer section-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

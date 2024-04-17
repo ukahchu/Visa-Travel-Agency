@@ -101,6 +101,20 @@ body {
   background-repeat: no-repeat;
 }
 
+/*Start of style for flight deals*/
+.header__sub {
+  padding-top: 4rem;
+  background-image: linear-gradient(
+      rgb(143, 177, 241),
+      rgba(247, 250, 255, 0.7)
+    ),
+    url("assets/header.jpg");
+  background-position: top top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*End of style for flight deals*/
 nav {
   position: fixed;
   isolation: isolate;
@@ -188,7 +202,7 @@ nav {
   width: fit-content;
   padding: 5px;
   display: grid;
-  grid-template-columns: max-content max-content max-content;
+  grid-template-columns: max-content max-content max-content max-content;
   align-items: center;
   background-color: var(--primary-color);
   border-radius: 2px;
@@ -322,6 +336,9 @@ nav {
   text-align: right;
 }
 
+.service__btn a {
+  color: var(--extra-light);
+}
 /*End of Flights section styles*/
 
 /*Start of flight offers section*/
