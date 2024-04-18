@@ -87,3 +87,15 @@ ScrollReveal().reveal(".offer__card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
+//dubai visa service page-visa change
+document.getElementById("visaChangeBtn").addEventListener("click", function () {
+  this.classList.toggle("active");
+  var form = document.getElementById("bookingForm");
+  if (this.classList.contains("active")) {
+    form.style.display = "block";
+  } else {
+    form.style.display = "none";
+  }
+});
+//dubai visa service page-visa chnage
