@@ -67,9 +67,7 @@
       drift.load("ppriffgccssg");
     </script>
     <!-- End of Async Drift Code -->
-    <title>
-      Flight-destinations | USA | CANADA | UKA | DUBAI | QATAR | DOHA
-    </title>
+    <title>Study Abroad-USA | Canada | Germany | Finland | Norway</title>
   </head>
 
   <body>
@@ -252,6 +250,20 @@
       <div class="footer__bar" id="footer-year">
         <!--Footer text is generated from the linked js file-->
       </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var currentYear = new Date().getFullYear(); // Get the current year
+          var footerYearDiv = document.getElementById("footer-year"); // Get the div by its ID
+          if (footerYearDiv) {
+            footerYearDiv.textContent = `© ${currentYear} Visa Travel Agency. All rights reserved.`; // Set the text content of the div
+            //adding styles to the footer
+            footerYearDiv.style.padding = "1rem";
+            footerYearDiv.style.fontSize = "0.8rem";
+            footerYearDiv.style.color = "var(--white)";
+            footerYearDiv.style.textAlign = "center";
+          }
+        });
+      </script>
     </footer>
     <!--End of footer section-->
     <script src="https://unpkg.com/scrollreveal"></script>
