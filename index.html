@@ -118,257 +118,58 @@
         <div class="booking">
           <div class="booking__type" id="booking-type">
             <div class="active">Roundtrip</div>
-            <div id="one-way-btn">One Way</div>
-            <div id="multiCityButton">Multi-City</div>
+            <div>One Way</div>
+            <div>Multi-City</div>
           </div>
-
-          <!--Start of Roundtrip form-->
-
-          <form action="/" class="booking__form form1" id="bookingForm">
+          <form action="/" class="booking__form" id="bookingForm">
             <div class="booking__input">
-              <label for="departure">From*</label>
+              <label for="departure">From</label>
               <!--Flight icon departure start-->
               <div class="input-icon">
                 <i class="ri-flight-takeoff-fill"></i>
-                <input type="text" placeholder="Departure City" required />
+                <input type="text" placeholder="Departure City" />
               </div>
               <!--flight icon departure end-->
             </div>
             <!--Flight icon arrival start-->
             <div class="booking__input">
-              <label for="arrival">To*</label>
+              <label for="arrival">To</label>
               <div class="input-icon">
                 <i class="ri-flight-land-line"></i>
-                <input type="text" placeholder="Arrival City" required />
+                <input type="text" placeholder="Arrival City" />
               </div>
             </div>
             <!--Flight icon arrival end-->
 
             <div class="booking__input">
-              <label for="date">Date*</label>
-              <input type="date" placeholder="Departure Date" required />
+              <label for="date">Date</label>
+              <input type="date" placeholder="Departure Date" />
             </div>
             <div class="booking__input">
-              <label for="departure">Return*</label>
+              <label for="departure">Return</label>
               <!--start of flight icon for return city-->
               <div class="input-icon">
                 <i class="ri-flight-takeoff-fill"></i>
-                <input type="text" placeholder="Departure City" required />
+                <input type="text" placeholder="Departure City" />
               </div>
               <!--End of flight icon for return city-->
             </div>
             <div class="booking__input">
-              <label for="arrival">To*</label>
+              <label for="arrival">To</label>
               <!--start of flight icon for arrival city-->
               <div class="input-icon">
                 <i class="ri-flight-land-line"></i>
-                <input type="text" placeholder="Arrival City" required />
+                <input type="text" placeholder="Arrival City" />
               </div>
               <!--end of flight icon for arrival city-->
             </div>
             <div class="booking__input">
-              <label for="date">Date*</label>
-              <input type="date" placeholder="Return Date" required />
-            </div>
-          </form>
-
-          <!--End of Roundtrip form-->
-
-          <div class="booking__btn">
-            <button class="btn">Next</button>
-          </div>
-          <!--Start of passenger details form-->
-          <form
-            action="/"
-            class="booking__form hidden form2"
-            id="bookingFormBookNow"
-          >
-            <div class="booking__input">
-              <label for="title">Title*</label>
-              <div class="input-icon">
-                <select id="title" name="title" required>
-                  <option value="">Select your title</option>
-                  <option value="mr">Mr.</option>
-                  <option value="mrs">Mrs.</option>
-                  <option value="ms">Ms.</option>
-                  <option value="dr">Dr.</option>
-                  <option value="prof">Prof.</option>
-                  <option value="rev">Rev.</option>
-                </select>
-              </div>
-            </div>
-            <div class="booking__input">
-              <label for="FirstName">FirstName*</label>
-              <div class="input-icon">
-                <input type="text" placeholder="FirstName" required />
-              </div>
-            </div>
-            <div class="booking__input">
-              <label for="text">LastName*</label>
-              <input type="text" placeholder="LastName" required />
-            </div>
-            <div class="booking__input">
-              <label for="Passport">Passport Details*</label>
-              <div class="input-icon">
-                <input type="text" placeholder="Passport Number" required />
-              </div>
-            </div>
-            <div class="booking__input">
-              <label for="date">Issue Date*</label>
-              <input type="date" placeholder="Issue-Date" required />
-            </div>
-            <div class="booking__input">
-              <label for="date">Expiry Date*</label>
-              <input type="date" placeholder="Expiry-Date" required />
+              <label for="date">Date</label>
+              <input type="date" placeholder="Return Date" />
             </div>
           </form>
           <div class="booking__btn">
-            <button class="btn hidden" id="unHide">Book Now</button>
-          </div>
-          <!--End of passenger details form-->
-
-          <!--One Way Form Start-->
-          <form
-            action="/"
-            class="booking__form hidden OneWayForm"
-            id="bookingFormOneWay"
-          >
-            <div class="booking__input">
-              <label for="departure">From*</label>
-              <!--Flight icon departure start-->
-              <div class="input-icon">
-                <i class="ri-flight-takeoff-fill"></i>
-                <input type="text" placeholder="Departure City" required />
-              </div>
-              <!--flight icon departure end-->
-            </div>
-            <!--Flight icon arrival start-->
-            <div class="booking__input">
-              <label for="arrival">To*</label>
-              <div class="input-icon">
-                <i class="ri-flight-land-line"></i>
-                <input type="text" placeholder="Arrival City" required />
-              </div>
-            </div>
-            <!--Flight icon arrival end-->
-
-            <div class="booking__input">
-              <label for="date">Date*</label>
-              <input type="date" placeholder="Departure Date" required />
-            </div>
-          </form>
-          <div class="booking__btn">
-            <button class="btn hidden" id="oneWayNextButton">Next</button>
-          </div>
-          <!--One Way Form end-->
-
-          <!--start One way form client details-->
-          <form
-            action="/"
-            class="booking__form hidden form2"
-            id="bookingFormBookNow"
-          >
-            <div class="booking__input">
-              <label for="title">Title*</label>
-              <div class="input-icon">
-                <select id="title" name="title" required>
-                  <option value="">Select your title</option>
-                  <option value="mr">Mr.</option>
-                  <option value="mrs">Mrs.</option>
-                  <option value="ms">Ms.</option>
-                  <option value="dr">Dr.</option>
-                  <option value="prof">Prof.</option>
-                  <option value="rev">Rev.</option>
-                </select>
-              </div>
-            </div>
-            <div class="booking__input">
-              <label for="FirstName">FirstName*</label>
-              <div class="input-icon">
-                <input type="text" placeholder="FirstName" required />
-              </div>
-            </div>
-            <div class="booking__input">
-              <label for="text">LastName*</label>
-              <input type="text" placeholder="LastName" required />
-            </div>
-            <div class="booking__input">
-              <label for="Passport">Passport Details*</label>
-              <div class="input-icon">
-                <input type="text" placeholder="Passport Number" required />
-              </div>
-            </div>
-            <div class="booking__input">
-              <label for="date">Issue Date*</label>
-              <input type="date" placeholder="Issue-Date" required />
-            </div>
-            <div class="booking__input">
-              <label for="date">Expiry Date*</label>
-              <input type="date" placeholder="Expiry-Date" required />
-            </div>
-          </form>
-          <div class="booking__btn">
-            <button class="btn hidden" id="unHide">Book Now</button>
-          </div>
-          <!--End One way form client details-->
-
-          <!--Start of Multi-city form-->
-
-          <form
-            action="/"
-            class="booking__form multiCityForm hidden"
-            id="bookingForm"
-          >
-            <div class="booking__input">
-              <label for="departure">From*</label>
-              <!--Flight icon departure start-->
-              <div class="input-icon">
-                <i class="ri-flight-takeoff-fill"></i>
-                <input type="text" placeholder="Departure City" required />
-              </div>
-              <!--flight icon departure end-->
-            </div>
-            <!--Flight icon arrival start-->
-            <div class="booking__input">
-              <label for="arrival">To*</label>
-              <div class="input-icon">
-                <i class="ri-flight-land-line"></i>
-                <input type="text" placeholder="Arrival City" required />
-              </div>
-            </div>
-            <!--Flight icon arrival end-->
-
-            <div class="booking__input">
-              <label for="date">Date*</label>
-              <input type="date" placeholder="Departure Date" required />
-            </div>
-            <div class="booking__input">
-              <label for="departure">Return*</label>
-              <!--start of flight icon for return city-->
-              <div class="input-icon">
-                <i class="ri-flight-takeoff-fill"></i>
-                <input type="text" placeholder="Departure City" required />
-              </div>
-              <!--End of flight icon for return city-->
-            </div>
-            <div class="booking__input">
-              <label for="arrival">To*</label>
-              <!--start of flight icon for arrival city-->
-              <div class="input-icon">
-                <i class="ri-flight-land-line"></i>
-                <input type="text" placeholder="Arrival City" required />
-              </div>
-              <!--end of flight icon for arrival city-->
-            </div>
-            <div class="booking__input">
-              <label for="date">Date*</label>
-              <input type="date" placeholder="Return Date" required />
-            </div>
-          </form>
-
-          <!--End of Multi-city form-->
-          <div class="booking__btn hidden">
-            <button class="btn">Next</button>
+            <button class="btn">Submit</button>
           </div>
         </div>
       </div>
@@ -771,82 +572,6 @@
       </div>
     </footer>
     <!--End of footer section-->
-
-    <!--Start of script for Round Trip Form-->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const nextButton = document.querySelector(".booking__btn button");
-        const bookNowButton = document.querySelector("#bookingFormBookNow");
-        const initialForm = document.querySelector("#bookingForm");
-        const unHideBookNow = document.querySelector("#unHide");
-
-        nextButton.addEventListener("click", function () {
-          initialForm.classList.add("hidden"); // Hide the initial form
-          nextButton.style.display = "none"; // Hide the Next button
-          bookNowButton.classList.remove("hidden"); // Show the Book Now form
-          unHideBookNow.classList.remove("hidden"); // Show the Book Now button
-        });
-      });
-    </script>
-    <!--End of script for Round Trip form-->
-
-    <!--Start of script for One Way form-->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const oneWayButton = document.getElementById("one-way-btn");
-        const oneWayForm = document.getElementById("bookingFormOneWay");
-        const oneWayNextButton = document.getElementById("oneWayNextButton");
-        const roundTripForm = document.getElementById("bookingForm");
-        const roundTripNextButton = document.querySelector(
-          ".booking__btn button"
-        ); // Adjust selector if necessary
-
-        oneWayButton.addEventListener("click", function () {
-          // Hide Roundtrip form and button
-          roundTripForm.classList.add("hidden");
-          roundTripNextButton.style.display = "none";
-
-          // Unhide One Way form and button
-          oneWayForm.classList.remove("hidden");
-          oneWayNextButton.classList.remove("hidden");
-        });
-      });
-    </script>
-    <!--Start of script for passenger details on One Way Form-->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const oneWayNextButton = document.getElementById("oneWayNextButton");
-        const bookingFormBookNow =
-          document.getElementById("bookingFormBookNow");
-        const bookNowButton = document.getElementById("unHide");
-        const oneWayForm = document.getElementById("bookingFormOneWay"); // Get the One Way form
-
-        oneWayNextButton.addEventListener("click", function () {
-          bookingFormBookNow.classList.remove("hidden"); // Unhide the booking details form
-          bookNowButton.classList.remove("hidden"); // Unhide the Book Now button
-          oneWayForm.classList.add("hidden"); // Hide the One Way form
-          oneWayNextButton.style.display = "none"; // Hide the Next button
-        });
-      });
-    </script>
-    <!--End of script for passenger details on One Way Form-->
-
-    <!--End of script for One Way form-->
-
-    <!--Start of Script handler for Multy-City Form-->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const multiCityButton = document.getElementById("multiCityButton");
-        const multiCityForm = document.getElementById("bookingForm");
-        const nextButton = document.querySelector(".booking__btn button");
-
-        multiCityButton.addEventListener("click", function () {
-          multiCityForm.classList.remove("hidden"); // Show the Multi-city form
-          nextButton.parentElement.classList.remove("hidden"); // Show the Next button
-        });
-      });
-    </script>
-    <!--End of Script handler for Multy-City Form-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>

@@ -100,9 +100,9 @@ document.getElementById("visaChangeBtn").addEventListener("click", function () {
 });
 //dubai visa service page-visa chnage
 
-//reveal form2 start
+//flight form start
 
-//reveal form2 end
+//flight form end
 
 //bookingForm data handler start
 
