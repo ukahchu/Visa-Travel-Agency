@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight-form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Start of landing page with flight booking form-->
+
+      <div class="section__container header__container" id="flights">
+        <h1>Explore: Flights ▫ Hotels ▫ Visas ▫ Tours ▫ Cars.</h1>
+        <p>
+          Embark on your dream adventure today.Explore, experience, and create
+          memories that last a lifetime with us.
+        </p>
+        <div class="booking">
+          
+          <!--Form start-->
+          <form action="/" class="booking__form" id="bookingForm">
+            <div class="booking__input">
+              <label for="name">Passenger Details</label>
+              <!--Flight icon departure start-->
+              <div class="input-icon">
+                <i class="ri-flight-takeoff-fill"></i>
+                <input type="text" placeholder="Title" />
+              </div>
+              <!--flight icon departure end-->
+            </div>
+            <!--Flight icon arrival start-->
+            <div class="booking__input">
+              <label for="name">First Name</label>
+              <div class="input-icon">
+                <i class="ri-flight-land-line"></i>
+                <input type="text" placeholder="First Name" />
+              </div>
+            </div>
+            <!--Flight icon arrival end-->
+
+            <div class="booking__input">
+              <label for="name">Last Name</label>
+              <input type="text" placeholder="Last Name" />
+            </div>
+            <div class="booking__input">
+              <label for="date">Date of Birth</label>
+              <!--start of flight icon for return city-->
+              <div class="input-icon">
+                <i class="ri-flight-takeoff-fill"></i>
+                <input type="day" placeholder="Please select a day" />
+              </div>
+              <!--End of flight icon for return city-->
+            </div>
+            <div class="booking__input">
+              <label for="month">Month</label>
+              <!--start of flight icon for arrival city-->
+              <div class="input-icon">
+                <i class="ri-flight-land-line"></i>
+                <input type="text" placeholder="Please select a month" />
+              </div>
+              <!--end of flight icon for arrival city-->
+            </div>
+            <div class="booking__input">
+              <label for="year">Year</label>
+              <input type="text" placeholder="Please select a year" />
+            </div>
+          </form>
+          <!--Form end-->
+          <div class="booking__btn">
+            <button class="btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--End of header with flight booking form-->
+
+    <!--Form end-->
+    <script src="main.js"></script>
+  </body>
+</html>

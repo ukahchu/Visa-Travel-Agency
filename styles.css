@@ -237,11 +237,12 @@ nav {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
 }
-
-.booking__input {
-  display: grid;
-  gap: 5px;
+/*hide flight form2 start*/
+.hidden {
+  display: none;
 }
+/*hide flight form2 end*/
+
 /*styling the input field for booking form*/
 .input-icon {
   position: relative;
@@ -270,6 +271,15 @@ nav {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--white);
+}
+.booking__input select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+  border: 1px solid var(--extra-light);
+  border-radius: 2px;
+  padding-right: 100px;
 }
 
 .booking__input input {
